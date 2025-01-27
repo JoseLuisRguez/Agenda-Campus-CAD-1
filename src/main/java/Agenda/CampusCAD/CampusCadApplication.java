@@ -19,7 +19,8 @@ public class CampusCadApplication {
             @Override
             public void addCorsMappings(CorsRegistry registry){
             registry.addMapping("/**")
-                    .allowedOrigins("https://agenda-campus-852bb.web.app", "http://localhost:8100")
+                    .allowedOrigins("https://agenda-campus-852bb.web.app")
+                    .allowedOrigins("http://localhost:8100")
                     .allowCredentials(true)
                     .allowedHeaders("*")
                     .allowedMethods("GET","POST","PUT","DELETE", "OPTIONS", "PATCH");
