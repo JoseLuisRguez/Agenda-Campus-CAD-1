@@ -20,6 +20,7 @@ public class CampusCadApplication {
             public void addCorsMappings(CorsRegistry registry){
             registry.addMapping("/**")
                     .allowedOrigins("https://agenda-campus-852bb.web.app") // Especifica el dominio
+		    .allowedOrigins("http://localhost:8100")
    	            .allowCredentials(true) // Permite credenciales como cookies o tokens
                     .allowedHeaders("*")
                     .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH");
